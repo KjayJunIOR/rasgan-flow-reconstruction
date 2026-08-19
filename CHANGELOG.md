@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 0.1.0 - 2026-08-18
+
 ### Fixed
 
 - Made discriminator conditioning graph-safe under `tf.function` by keeping the
