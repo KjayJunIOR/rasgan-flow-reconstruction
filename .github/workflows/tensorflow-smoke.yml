@@ -1,0 +1,23 @@
+name: TensorFlow smoke test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  tensorflow-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install package
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[dev]"
+
+      - name: Run TensorFlow model smoke tests
+        run: |
+          pytest -m tensorflow
+          rasgan-selfcheck
