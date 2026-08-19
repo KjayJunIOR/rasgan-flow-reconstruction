@@ -1,5 +1,6 @@
 # RASGAN: Physics-Aware Flow-Field Reconstruction in TensorFlow
 
+[![CI](https://github.com/KjayJunIOR/rasgan-flow-reconstruction/actions/workflows/ci.yml/badge.svg)](https://github.com/KjayJunIOR/rasgan-flow-reconstruction/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](#installation)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.17%2B-orange)](#installation)
 [![Data layout](https://img.shields.io/badge/data-NCHW-informational)](docs/DATA_FORMAT.md)
